@@ -5,7 +5,7 @@ Instructions and files that can be used to create and use a Docker container. Th
 ## Host system
 The host system needs to have a few things set up. Docker should be installed, of course, but it is also recommended to use a Git repository, so a git client is needed as well.
 
-Follow these instructions to install Docker CE on Debian: https://docs.docker.com/install/linux/docker-ce/debian/
+Follow these instructions to install Docker CE on Debian: https://docs.docker.com/install/linux/docker-ce/debian/  
 After the install, verify that the Docker installation is working properly by running this command:
 ~~~
 docker run hello-world
