@@ -1,4 +1,4 @@
-# bla
+# host-scripts
 The files in this directory can be used to provide secure access to Docker containers
 
 An example for /etc/sudoers looks like the following (providing access to a Linux system group named docker-users):
