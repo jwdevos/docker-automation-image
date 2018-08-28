@@ -20,22 +20,41 @@ apt install git
 ## Container
 The container uses the latest standard Python image from Docker Hub (library/python). This gives us a Python3 environment to use. 
 
-watch the dot:
+### Building the container
+This command builds the container. Make sure to include the dot at the end:
 ~~~
 docker build -f ./Dockerfile -t automator .
-docker image
+
+~~~
+
+### Some more helpful commands
+List local Docker images
+~~~
+docker image ls
 docker image rm <image ID>
 ~~~
 
+Remove local Docker image
+~~~
+docker image rmi <image ID>
+~~~
 
+### Some more Docker build resources
 Docker build command reference: https://docs.docker.com/engine/reference/commandline/build/
 Docker build instructions: https://docs.docker.com/engine/reference/builder/
 
-Run the image:
+### Example commands for running and using the image
+Start a new container running the new image
 ~~~
 docker run -dit --name automator_container automator
-docker container ls
+~~~
+
+List the running containers
+~~~
+docker ps -a
+~~~
+
+Connect to a running container
+~~~
 docker exec -it <container_name> /bin/bash
-pip list
-ansible --version
 ~~~
