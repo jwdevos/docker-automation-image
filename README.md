@@ -1,3 +1,5 @@
+**-- this repo will be archived and moved to https://codeberg.org/jwdevos/docker-automation-image --**
+
 # docker-automation-image
 
 Instructions and files that can be used to create and use a Docker container. The instructions are written assuming a Debian host environment for the Docker container. 
